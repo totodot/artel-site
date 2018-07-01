@@ -10,7 +10,7 @@ const App = () => (
     <ScrollTo scrollId="section1">
       {scroll => (
         <button type="button" onClick={scroll}>
-          elo
+          Click
         </button>
       )}
     </ScrollTo>
