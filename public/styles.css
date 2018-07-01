@@ -1,0 +1,18 @@
+#loader {
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#loader.exit {
+  opacity: 0;
+}
