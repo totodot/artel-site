@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import App from '../../src/App';
+import App from '../../src/app';
 
 const path = require('path');
 const fs = require('fs');

@@ -1,3 +1,6 @@
+/* eslint no-plusplus: "off" */
+/* eslint no-param-reassign: "off" */
+
 const linear = t => t;
 // accelerating from zero velocity
 const easeInQuad = t => t * t;
