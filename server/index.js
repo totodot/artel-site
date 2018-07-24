@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.use('^/$', serverRenderer);
 
-router.use(express.static(path.resolve(__dirname, '..', 'build')));
+router.use(express.static(path.resolve(__dirname, '..', 'dist')));
 
 app.use(router);
 

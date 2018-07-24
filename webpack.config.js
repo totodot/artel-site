@@ -10,7 +10,7 @@ const copyPlugin = new CopyWebpackPlugin([{ from: 'public' }]);
 
 module.exports = {
   devtool: 'source-map',
-  entry: './src/app.js',
+  entry: './src/index.js',
   module: {
     rules: [
       {
