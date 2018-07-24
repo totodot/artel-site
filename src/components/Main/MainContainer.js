@@ -8,8 +8,8 @@ import '../../styles/main.scss';
 const MainContainer = () => (
   <RemoveLoader>
     <div>
-      <section>sdlasdasd</section>
-      <Header>Heading Content!</Header>
+      <section>Test section</section>
+      <Header>Toto</Header>
       <ScrollTo scrollId="section4">
         {scroll => (
           <button type="button" onClick={scroll}>
