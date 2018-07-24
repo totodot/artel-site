@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 
 module.exports = (req, res) => {
-  const filePath = path.resolve(__dirname, '..', '..', 'build', 'index.html');
+  const filePath = path.resolve(__dirname, '..', '..', 'dist', 'index.html');
 
   fs.readFile(filePath, 'utf8', (err, htmlData) => {
     if (err) {
@@ -15,6 +15,6 @@ module.exports = (req, res) => {
     }
 
     const html = ReactDOMServer.renderToString(<App />);
-    return res.send(htmlData.replace('<div id="root"></div>', `<div id="root">${html}</div>`));
+    return res.send(htmlData.replace('<section id="root"></section>', `<section id="root">${html}</section>`));
   });
 };

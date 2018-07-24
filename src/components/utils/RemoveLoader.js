@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 class RemoveLoader extends PureComponent {
   componentDidMount() {
     const loader = document.querySelector('#loader');
-    loader.addEventListener('transitionend', () => loader.remove());
-    loader.classList.add('exit');
+    if (loader) {
+      loader.addEventListener('transitionend', () => loader.remove());
+      loader.classList.add('exit');
+    }
   }
 
   render() {
